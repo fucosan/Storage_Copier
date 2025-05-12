@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Storage Copier</title>
+  <style>
+    body {
+      min-width: 240px;
+      font-family: Arial, sans-serif;
+      margin: 12px;
+    }
+    h1 {
+      font-size: 1.4em;
+      margin-bottom: 0.5em;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5em;
+    }
+    button {
+      width: 100%;
+      margin-bottom: 0.5em;
+      padding: 0.5em;
+      font-size: 1em;
+    }
+  </style>
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <h1>Storage Copier</h1>
+  <label>
+    <input type="radio" name="storage-type" value="local"> Local Storage
+  </label>
+  <label>
+    <input type="radio" name="storage-type" value="session" checked> Session Storage
+  </label>
+  <button id="export-storage">Export Storage</button>
+  <button id="import-storage">Import Storage</button>
+</body>
+</html>
